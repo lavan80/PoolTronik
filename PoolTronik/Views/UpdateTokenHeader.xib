@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UpdateTokenHeader" customModule="PoolTronik" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7C-ya-chn">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztx-id-bHh">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                            <connections>
+                                <action selector="actionButtonPressed:" destination="-1" eventType="touchUpInside" id="wwQ-N1-WPX"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warning_icon" translatesAutoresizingMaskIntoConstraints="NO" id="pRb-I5-1hK">
+                            <rect key="frame" x="176" y="12" width="62" height="62"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="62" id="cGW-gh-20T"/>
+                                <constraint firstAttribute="height" constant="62" id="xLE-zB-OAF"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attention you have to update your token. (Tap here)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDc-bY-k4g">
+                            <rect key="frame" x="12" y="86" width="390" height="52"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ztx-id-bHh" secondAttribute="bottom" id="1QZ-k5-z3X"/>
+                        <constraint firstItem="ztx-id-bHh" firstAttribute="top" secondItem="h7C-ya-chn" secondAttribute="top" id="Nto-Fe-mPI"/>
+                        <constraint firstAttribute="trailing" secondItem="wDc-bY-k4g" secondAttribute="trailing" constant="12" id="PaP-7t-Vj0"/>
+                        <constraint firstAttribute="trailing" secondItem="ztx-id-bHh" secondAttribute="trailing" id="XrU-uG-RIs"/>
+                        <constraint firstItem="ztx-id-bHh" firstAttribute="leading" secondItem="h7C-ya-chn" secondAttribute="leading" id="YBm-WI-ZWq"/>
+                        <constraint firstItem="pRb-I5-1hK" firstAttribute="centerX" secondItem="ztx-id-bHh" secondAttribute="centerX" id="afA-8l-ib9"/>
+                        <constraint firstItem="wDc-bY-k4g" firstAttribute="leading" secondItem="h7C-ya-chn" secondAttribute="leading" constant="12" id="hpi-9c-VYy"/>
+                        <constraint firstAttribute="bottom" secondItem="wDc-bY-k4g" secondAttribute="bottom" constant="12" id="uBp-aM-fXD"/>
+                        <constraint firstItem="pRb-I5-1hK" firstAttribute="top" secondItem="h7C-ya-chn" secondAttribute="top" constant="12" id="vDN-7f-aCc"/>
+                        <constraint firstItem="wDc-bY-k4g" firstAttribute="top" secondItem="pRb-I5-1hK" secondAttribute="bottom" constant="12" id="zK0-aM-XUI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="h7C-ya-chn" secondAttribute="bottom" id="Qjr-cm-UFF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="h7C-ya-chn" secondAttribute="trailing" id="ePm-Zx-IS9"/>
+                <constraint firstItem="h7C-ya-chn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kav-QK-yCx"/>
+                <constraint firstItem="h7C-ya-chn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="kz2-1a-9tz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="131.8840579710145" y="103.79464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="warning_icon" width="512" height="512"/>
+    </resources>
+</document>

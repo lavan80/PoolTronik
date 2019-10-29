@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>306887609032-i5dm6mgorurn9ovlj902vglmbe2d82va.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.306887609032-i5dm6mgorurn9ovlj902vglmbe2d82va</string>
+	<key>API_KEY</key>
+	<string>AIzaSyADajhQcpyYZQ5EdP1ZV2TryMpWcIb3bSU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>306887609032</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.pool.tronik.PoolTronik</string>
+	<key>PROJECT_ID</key>
+	<string>iospooltronik</string>
+	<key>STORAGE_BUCKET</key>
+	<string>iospooltronik.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:306887609032:ios:50d4884b8e910ec3</string>
+	<key>DATABASE_URL</key>
+	<string>https://iospooltronik.firebaseio.com</string>
+</dict>
+</plist>

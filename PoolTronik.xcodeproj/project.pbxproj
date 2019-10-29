@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11B15D8F22BCFC38000C5A9A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11B15D8E22BCFC38000C5A9A /* GoogleService-Info.plist */; };
+		49BE233FE2B96250D7E03287 /* Pods_PoolTronikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4E461C3660B16B6AED58CC /* Pods_PoolTronikTests.framework */; };
+		B493319F2CAC8FC21D07FC3F /* Pods_PoolTronik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069CF269E3140B06E1E2690E /* Pods_PoolTronik.framework */; };
+		C991B767EFBD67989F45956C /* Pods_PoolTronikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E152CDE7C1986B5FD5564F50 /* Pods_PoolTronikUITests.framework */; };
+		F408F4B5222FE056007E8282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F4B4222FE056007E8282 /* AppDelegate.swift */; };
+		F408F4B7222FE056007E8282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F4B6222FE056007E8282 /* ViewController.swift */; };
+		F408F4BA222FE056007E8282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F408F4B8222FE056007E8282 /* Main.storyboard */; };
+		F408F4BC222FE057007E8282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F408F4BB222FE057007E8282 /* Assets.xcassets */; };
+		F408F4BF222FE057007E8282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F408F4BD222FE057007E8282 /* LaunchScreen.storyboard */; };
+		F408F4CA222FE057007E8282 /* PoolTronikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F4C9222FE057007E8282 /* PoolTronikTests.swift */; };
+		F408F4D5222FE057007E8282 /* PoolTronikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F4D4222FE057007E8282 /* PoolTronikUITests.swift */; };
+		F44A50252237B82600E1AFB4 /* String+IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A50242237B82600E1AFB4 /* String+IP.swift */; };
+		F450DCD522367C17004794D0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450DCD422367C17004794D0 /* NetworkManager.swift */; };
+		F460B745225335FF007AD0CF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F460B744225335FF007AD0CF /* WebKit.framework */; };
+		F4CCE8BE222FE66300E662D0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCE8BD222FE66300E662D0 /* MenuViewController.swift */; };
+		F4CCE8C0222FE69500E662D0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCE8BF222FE69500E662D0 /* SettingsViewController.swift */; };
+		F4CCE8C3222FED9500E662D0 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCE8C2222FED9500E662D0 /* AboutViewController.swift */; };
+		F4CCE8C5222FF62C00E662D0 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCE8C4222FF62C00E662D0 /* ListViewController.swift */; };
+		F4CCE8C82230001500E662D0 /* RelayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCE8C72230001500E662D0 /* RelayTableViewCell.swift */; };
+		F4CCE8CA2230031600E662D0 /* RelayDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCE8C92230031600E662D0 /* RelayDetailsViewController.swift */; };
+		F4CCE8CD2230080600E662D0 /* Relay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCE8CC2230080600E662D0 /* Relay.swift */; };
+		F4CCE8CF22300A2300E662D0 /* LocalDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CCE8CE22300A2300E662D0 /* LocalDataBase.swift */; };
+		F4E3AADD236823ED00EB972C /* UpdateTokenHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E3AADC236823ED00EB972C /* UpdateTokenHeader.swift */; };
+		F4E3AADF2368240100EB972C /* UpdateTokenHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E3AADE2368240100EB972C /* UpdateTokenHeader.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F408F4C6222FE057007E8282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F408F4A9222FE056007E8282 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F408F4B0222FE056007E8282;
+			remoteInfo = PoolTronik;
+		};
+		F408F4D1222FE057007E8282 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F408F4A9222FE056007E8282 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F408F4B0222FE056007E8282;
+			remoteInfo = PoolTronik;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		069CF269E3140B06E1E2690E /* Pods_PoolTronik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolTronik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11B15D8E22BCFC38000C5A9A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A42FBF723687872003C7AD4 /* PoolTronik.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PoolTronik.entitlements; sourceTree = "<group>"; };
+		747CC33C848EB6478D535100 /* Pods-PoolTronik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronik.debug.xcconfig"; path = "Target Support Files/Pods-PoolTronik/Pods-PoolTronik.debug.xcconfig"; sourceTree = "<group>"; };
+		A7BEE5AF3781C0AF9E0FD970 /* Pods-PoolTronikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronikTests.release.xcconfig"; path = "Target Support Files/Pods-PoolTronikTests/Pods-PoolTronikTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA4E461C3660B16B6AED58CC /* Pods_PoolTronikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolTronikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C510C0060CD605C8B1E1B592 /* Pods-PoolTronikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronikUITests.release.xcconfig"; path = "Target Support Files/Pods-PoolTronikUITests/Pods-PoolTronikUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D26767C4B4FC7DA5ADA26595 /* Pods-PoolTronik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronik.release.xcconfig"; path = "Target Support Files/Pods-PoolTronik/Pods-PoolTronik.release.xcconfig"; sourceTree = "<group>"; };
+		E152CDE7C1986B5FD5564F50 /* Pods_PoolTronikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolTronikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE12FF91208790B97B49A0C5 /* Pods-PoolTronikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronikUITests.debug.xcconfig"; path = "Target Support Files/Pods-PoolTronikUITests/Pods-PoolTronikUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF2D25EC0A0F7D84981670DF /* Pods-PoolTronikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronikTests.debug.xcconfig"; path = "Target Support Files/Pods-PoolTronikTests/Pods-PoolTronikTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F408F4B1222FE056007E8282 /* PoolTronik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolTronik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F408F4B4222FE056007E8282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F408F4B6222FE056007E8282 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F408F4B9222FE056007E8282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F408F4BB222FE057007E8282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F408F4BE222FE057007E8282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F408F4C0222FE057007E8282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F408F4C5222FE057007E8282 /* PoolTronikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoolTronikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F408F4C9222FE057007E8282 /* PoolTronikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolTronikTests.swift; sourceTree = "<group>"; };
+		F408F4CB222FE057007E8282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F408F4D0222FE057007E8282 /* PoolTronikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoolTronikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F408F4D4222FE057007E8282 /* PoolTronikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolTronikUITests.swift; sourceTree = "<group>"; };
+		F408F4D6222FE057007E8282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44A50242237B82600E1AFB4 /* String+IP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+IP.swift"; sourceTree = "<group>"; };
+		F450DCD422367C17004794D0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F460B744225335FF007AD0CF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F4CCE8BD222FE66300E662D0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F4CCE8BF222FE69500E662D0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F4CCE8C2222FED9500E662D0 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		F4CCE8C4222FF62C00E662D0 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		F4CCE8C72230001500E662D0 /* RelayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayTableViewCell.swift; sourceTree = "<group>"; };
+		F4CCE8C92230031600E662D0 /* RelayDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayDetailsViewController.swift; sourceTree = "<group>"; };
+		F4CCE8CC2230080600E662D0 /* Relay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relay.swift; sourceTree = "<group>"; };
+		F4CCE8CE22300A2300E662D0 /* LocalDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataBase.swift; sourceTree = "<group>"; };
+		F4E3AADC236823ED00EB972C /* UpdateTokenHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTokenHeader.swift; sourceTree = "<group>"; };
+		F4E3AADE2368240100EB972C /* UpdateTokenHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateTokenHeader.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F408F4AE222FE056007E8282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460B745225335FF007AD0CF /* WebKit.framework in Frameworks */,
+				B493319F2CAC8FC21D07FC3F /* Pods_PoolTronik.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F408F4C2222FE057007E8282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49BE233FE2B96250D7E03287 /* Pods_PoolTronikTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F408F4CD222FE057007E8282 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C991B767EFBD67989F45956C /* Pods_PoolTronikUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4085131DD14021766BF7B8E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F460B744225335FF007AD0CF /* WebKit.framework */,
+				069CF269E3140B06E1E2690E /* Pods_PoolTronik.framework */,
+				BA4E461C3660B16B6AED58CC /* Pods_PoolTronikTests.framework */,
+				E152CDE7C1986B5FD5564F50 /* Pods_PoolTronikUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5E5A388E108C554B79540F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				747CC33C848EB6478D535100 /* Pods-PoolTronik.debug.xcconfig */,
+				D26767C4B4FC7DA5ADA26595 /* Pods-PoolTronik.release.xcconfig */,
+				EF2D25EC0A0F7D84981670DF /* Pods-PoolTronikTests.debug.xcconfig */,
+				A7BEE5AF3781C0AF9E0FD970 /* Pods-PoolTronikTests.release.xcconfig */,
+				EE12FF91208790B97B49A0C5 /* Pods-PoolTronikUITests.debug.xcconfig */,
+				C510C0060CD605C8B1E1B592 /* Pods-PoolTronikUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F408F4A8222FE056007E8282 = {
+			isa = PBXGroup;
+			children = (
+				F408F4B3222FE056007E8282 /* PoolTronik */,
+				F408F4C8222FE057007E8282 /* PoolTronikTests */,
+				F408F4D3222FE057007E8282 /* PoolTronikUITests */,
+				F408F4B2222FE056007E8282 /* Products */,
+				A5E5A388E108C554B79540F0 /* Pods */,
+				4085131DD14021766BF7B8E4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F408F4B2222FE056007E8282 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F408F4B1222FE056007E8282 /* PoolTronik.app */,
+				F408F4C5222FE057007E8282 /* PoolTronikTests.xctest */,
+				F408F4D0222FE057007E8282 /* PoolTronikUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F408F4B3222FE056007E8282 /* PoolTronik */ = {
+			isa = PBXGroup;
+			children = (
+				3A42FBF723687872003C7AD4 /* PoolTronik.entitlements */,
+				F4CCE8C1222FE69E00E662D0 /* ViewControllers */,
+				F4CCE8C62230000000E662D0 /* Views */,
+				F4CCE8CB223007DB00E662D0 /* Models */,
+				F450DCD322367BFE004794D0 /* Network */,
+				F408F4B4222FE056007E8282 /* AppDelegate.swift */,
+				F408F4B6222FE056007E8282 /* ViewController.swift */,
+				F408F4B8222FE056007E8282 /* Main.storyboard */,
+				F408F4BB222FE057007E8282 /* Assets.xcassets */,
+				F408F4BD222FE057007E8282 /* LaunchScreen.storyboard */,
+				F408F4C0222FE057007E8282 /* Info.plist */,
+				11B15D8E22BCFC38000C5A9A /* GoogleService-Info.plist */,
+			);
+			path = PoolTronik;
+			sourceTree = "<group>";
+		};
+		F408F4C8222FE057007E8282 /* PoolTronikTests */ = {
+			isa = PBXGroup;
+			children = (
+				F408F4C9222FE057007E8282 /* PoolTronikTests.swift */,
+				F408F4CB222FE057007E8282 /* Info.plist */,
+			);
+			path = PoolTronikTests;
+			sourceTree = "<group>";
+		};
+		F408F4D3222FE057007E8282 /* PoolTronikUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F408F4D4222FE057007E8282 /* PoolTronikUITests.swift */,
+				F408F4D6222FE057007E8282 /* Info.plist */,
+			);
+			path = PoolTronikUITests;
+			sourceTree = "<group>";
+		};
+		F450DCD322367BFE004794D0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F450DCD422367C17004794D0 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F4CCE8C1222FE69E00E662D0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F4CCE8BD222FE66300E662D0 /* MenuViewController.swift */,
+				F4CCE8C4222FF62C00E662D0 /* ListViewController.swift */,
+				F4CCE8BF222FE69500E662D0 /* SettingsViewController.swift */,
+				F4CCE8C2222FED9500E662D0 /* AboutViewController.swift */,
+				F4CCE8C92230031600E662D0 /* RelayDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F4CCE8C62230000000E662D0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4CCE8C72230001500E662D0 /* RelayTableViewCell.swift */,
+				F4E3AADC236823ED00EB972C /* UpdateTokenHeader.swift */,
+				F4E3AADE2368240100EB972C /* UpdateTokenHeader.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F4CCE8CB223007DB00E662D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F4CCE8CC2230080600E662D0 /* Relay.swift */,
+				F4CCE8CE22300A2300E662D0 /* LocalDataBase.swift */,
+				F44A50242237B82600E1AFB4 /* String+IP.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F408F4B0222FE056007E8282 /* PoolTronik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F408F4D9222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronik" */;
+			buildPhases = (
+				BDD390BAA3C3697BC204A7DD /* [CP] Check Pods Manifest.lock */,
+				F408F4AD222FE056007E8282 /* Sources */,
+				F408F4AE222FE056007E8282 /* Frameworks */,
+				F408F4AF222FE056007E8282 /* Resources */,
+				41627D70BD8B3F6A3815B059 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PoolTronik;
+			productName = PoolTronik;
+			productReference = F408F4B1222FE056007E8282 /* PoolTronik.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F408F4C4222FE057007E8282 /* PoolTronikTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F408F4DC222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronikTests" */;
+			buildPhases = (
+				7F580607D604803CB76A9C3D /* [CP] Check Pods Manifest.lock */,
+				F408F4C1222FE057007E8282 /* Sources */,
+				F408F4C2222FE057007E8282 /* Frameworks */,
+				F408F4C3222FE057007E8282 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F408F4C7222FE057007E8282 /* PBXTargetDependency */,
+			);
+			name = PoolTronikTests;
+			productName = PoolTronikTests;
+			productReference = F408F4C5222FE057007E8282 /* PoolTronikTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F408F4CF222FE057007E8282 /* PoolTronikUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F408F4DF222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronikUITests" */;
+			buildPhases = (
+				07FD1B397CA1747028C223ED /* [CP] Check Pods Manifest.lock */,
+				F408F4CC222FE057007E8282 /* Sources */,
+				F408F4CD222FE057007E8282 /* Frameworks */,
+				F408F4CE222FE057007E8282 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F408F4D2222FE057007E8282 /* PBXTargetDependency */,
+			);
+			name = PoolTronikUITests;
+			productName = PoolTronikUITests;
+			productReference = F408F4D0222FE057007E8282 /* PoolTronikUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F408F4A9222FE056007E8282 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Alexey Kozlov";
+				TargetAttributes = {
+					F408F4B0222FE056007E8282 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F408F4C4222FE057007E8282 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F408F4B0222FE056007E8282;
+					};
+					F408F4CF222FE057007E8282 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F408F4B0222FE056007E8282;
+					};
+				};
+			};
+			buildConfigurationList = F408F4AC222FE056007E8282 /* Build configuration list for PBXProject "PoolTronik" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F408F4A8222FE056007E8282;
+			productRefGroup = F408F4B2222FE056007E8282 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F408F4B0222FE056007E8282 /* PoolTronik */,
+				F408F4C4222FE057007E8282 /* PoolTronikTests */,
+				F408F4CF222FE057007E8282 /* PoolTronikUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F408F4AF222FE056007E8282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F408F4BF222FE057007E8282 /* LaunchScreen.storyboard in Resources */,
+				11B15D8F22BCFC38000C5A9A /* GoogleService-Info.plist in Resources */,
+				F408F4BC222FE057007E8282 /* Assets.xcassets in Resources */,
+				F408F4BA222FE056007E8282 /* Main.storyboard in Resources */,
+				F4E3AADF2368240100EB972C /* UpdateTokenHeader.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F408F4C3222FE057007E8282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F408F4CE222FE057007E8282 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07FD1B397CA1747028C223ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoolTronikUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41627D70BD8B3F6A3815B059 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PoolTronik/Pods-PoolTronik-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PoolTronik/Pods-PoolTronik-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PoolTronik/Pods-PoolTronik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F580607D604803CB76A9C3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoolTronikTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDD390BAA3C3697BC204A7DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PoolTronik-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F408F4AD222FE056007E8282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4E3AADD236823ED00EB972C /* UpdateTokenHeader.swift in Sources */,
+				F4CCE8CF22300A2300E662D0 /* LocalDataBase.swift in Sources */,
+				F44A50252237B82600E1AFB4 /* String+IP.swift in Sources */,
+				F408F4B7222FE056007E8282 /* ViewController.swift in Sources */,
+				F4CCE8BE222FE66300E662D0 /* MenuViewController.swift in Sources */,
+				F4CCE8CA2230031600E662D0 /* RelayDetailsViewController.swift in Sources */,
+				F450DCD522367C17004794D0 /* NetworkManager.swift in Sources */,
+				F4CCE8C5222FF62C00E662D0 /* ListViewController.swift in Sources */,
+				F4CCE8CD2230080600E662D0 /* Relay.swift in Sources */,
+				F4CCE8C82230001500E662D0 /* RelayTableViewCell.swift in Sources */,
+				F408F4B5222FE056007E8282 /* AppDelegate.swift in Sources */,
+				F4CCE8C3222FED9500E662D0 /* AboutViewController.swift in Sources */,
+				F4CCE8C0222FE69500E662D0 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F408F4C1222FE057007E8282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F408F4CA222FE057007E8282 /* PoolTronikTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F408F4CC222FE057007E8282 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F408F4D5222FE057007E8282 /* PoolTronikUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F408F4C7222FE057007E8282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F408F4B0222FE056007E8282 /* PoolTronik */;
+			targetProxy = F408F4C6222FE057007E8282 /* PBXContainerItemProxy */;
+		};
+		F408F4D2222FE057007E8282 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F408F4B0222FE056007E8282 /* PoolTronik */;
+			targetProxy = F408F4D1222FE057007E8282 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F408F4B8222FE056007E8282 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F408F4B9222FE056007E8282 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F408F4BD222FE057007E8282 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F408F4BE222FE057007E8282 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F408F4D7222FE057007E8282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F408F4D8222FE057007E8282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F408F4DA222FE057007E8282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 747CC33C848EB6478D535100 /* Pods-PoolTronik.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PoolTronik/PoolTronik.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8PK8XG2DA;
+				INFOPLIST_FILE = PoolTronik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pool.tronik.PoolTronik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F408F4DB222FE057007E8282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D26767C4B4FC7DA5ADA26595 /* Pods-PoolTronik.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PoolTronik/PoolTronik.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8PK8XG2DA;
+				INFOPLIST_FILE = PoolTronik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pool.tronik.PoolTronik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F408F4DD222FE057007E8282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF2D25EC0A0F7D84981670DF /* Pods-PoolTronikTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PoolTronikTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zzzz.PoolTronikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoolTronik.app/PoolTronik";
+			};
+			name = Debug;
+		};
+		F408F4DE222FE057007E8282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7BEE5AF3781C0AF9E0FD970 /* Pods-PoolTronikTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PoolTronikTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zzzz.PoolTronikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoolTronik.app/PoolTronik";
+			};
+			name = Release;
+		};
+		F408F4E0222FE057007E8282 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE12FF91208790B97B49A0C5 /* Pods-PoolTronikUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PoolTronikUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zzzz.PoolTronikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PoolTronik;
+			};
+			name = Debug;
+		};
+		F408F4E1222FE057007E8282 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C510C0060CD605C8B1E1B592 /* Pods-PoolTronikUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PoolTronikUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zzzz.PoolTronikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PoolTronik;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F408F4AC222FE056007E8282 /* Build configuration list for PBXProject "PoolTronik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F408F4D7222FE057007E8282 /* Debug */,
+				F408F4D8222FE057007E8282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F408F4D9222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F408F4DA222FE057007E8282 /* Debug */,
+				F408F4DB222FE057007E8282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F408F4DC222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronikTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F408F4DD222FE057007E8282 /* Debug */,
+				F408F4DE222FE057007E8282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F408F4DF222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronikUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F408F4E0222FE057007E8282 /* Debug */,
+				F408F4E1222FE057007E8282 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F408F4A9222FE056007E8282 /* Project object */;
+}
