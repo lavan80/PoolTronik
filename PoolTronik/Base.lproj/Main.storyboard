@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="132" y="113"/>
         </scene>
-        <!--MyPoolTronik-->
+        <!--PoolTronik-->
         <scene sceneID="736-e3-ANX">
             <objects>
                 <viewController id="WTf-UU-pYq" customClass="ListViewController" customModule="PoolTronik" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,7 +83,9 @@
                                                         <constraint firstAttribute="height" constant="30" id="viE-F4-6es"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="yyg-4W-gip"/>
                                                     </constraints>
-                                                    <state key="normal" title="Edit"/>
+                                                    <state key="normal" title="Edit">
+                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="detailsButtonPressed:" destination="bVV-eX-U3i" eventType="touchUpInside" id="D56-0M-RWO"/>
                                                     </connections>
@@ -122,8 +124,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8sn-Jm-ui6"/>
                     </view>
-                    <navigationItem key="navigationItem" title="MyPoolTronik" id="YgM-fK-E0M">
-                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="VKy-AI-E36">
+                    <navigationItem key="navigationItem" title="PoolTronik" id="YgM-fK-E0M">
+                        <barButtonItem key="leftBarButtonItem" image="Image" id="VKy-AI-E36">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <action selector="sideMenuPressed:" destination="WTf-UU-pYq" id="kOX-7u-oPk"/>
                             </connections>
@@ -138,7 +141,7 @@
             </objects>
             <point key="canvasLocation" x="2760.8000000000002" y="-181.25937031484258"/>
         </scene>
-        <!--Relay Details View Controller-->
+        <!--PoolTronik-->
         <scene sceneID="LFW-nZ-9WU">
             <objects>
                 <viewController storyboardIdentifier="relayDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7G7-UG-s1E" customClass="RelayDetailsViewController" customModule="PoolTronik" customModuleProvider="target" sceneMemberID="viewController">
@@ -236,8 +239,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4lc-4T-4TO"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5Lp-7I-vh7">
+                    <navigationItem key="navigationItem" title="PoolTronik" id="5Lp-7I-vh7">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="2nh-TW-sNE">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <action selector="donePressed:" destination="7G7-UG-s1E" id="E0p-iN-dcA"/>
                             </connections>
@@ -558,6 +562,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="36" height="36"/>
         <image name="alarm" width="512" height="512"/>
         <image name="logo" width="50" height="58"/>
     </resources>
