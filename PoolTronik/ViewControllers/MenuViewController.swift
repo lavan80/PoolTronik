@@ -38,8 +38,10 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let row = indexPath.row
         if row == ViewControllerType.settings.rawValue {
+            cell.imageView?.image = UIImage.init(named: "settings")
             cell.textLabel?.text = "Settings"
         } else if row == ViewControllerType.about.rawValue {
+            cell.imageView?.image = UIImage.init(named: "about")
             cell.textLabel?.text = "About"
         }
         return cell

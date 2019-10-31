@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     var window: UIWindow?
     
-    let gcmMessageIDKey = "gcm.message_id";//just for test
+    let gcmMessageIDKey = "gcm.message_id";
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -75,12 +75,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
-        if let messageID = userInfo[gcmMessageIDKey] {
-            print("Message ID: \(messageID)")
-        }
-        
-        // Print full message.
-        print(userInfo)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let otherVC = storyBoard.instantiateViewController(withIdentifier: "LeakViewController") as! LeakViewController
+        window?.rootViewController = otherVC;
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
