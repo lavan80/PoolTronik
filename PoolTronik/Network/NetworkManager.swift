@@ -51,12 +51,13 @@ class NetworkManager {
                                        "platform": "iOS"]
 
             let jsonData = try? JSONSerialization.data(withJSONObject: json)
-
             // create post request
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
             request.httpBody = jsonData
-            URLSession.shared.dataTask(with: url) { (data, response, error) in
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            request.addValue("application/json", forHTTPHeaderField: "Accept")
+            URLSession.shared.dataTask(with: request) { (data, response, error) in
                 guard let _ = data, let _ = response as? HTTPURLResponse, error == nil else {
                     completion(false)
                     return
