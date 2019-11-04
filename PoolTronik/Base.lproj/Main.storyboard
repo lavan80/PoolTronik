@@ -359,7 +359,8 @@
                         <viewLayoutGuide key="safeArea" id="why-sT-JRN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="xKF-az-KoG">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="pjE-US-2Ba">
+                        <barButtonItem key="leftBarButtonItem" title="Close" image="Image-1" id="pjE-US-2Ba">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <action selector="close:" destination="qmi-87-ECD" id="I4U-PF-PWB"/>
                             </connections>
@@ -563,6 +564,7 @@
     </scenes>
     <resources>
         <image name="Image" width="36" height="36"/>
+        <image name="Image-1" width="36" height="36"/>
         <image name="alarm" width="512" height="512"/>
         <image name="logo" width="50" height="58"/>
     </resources>
