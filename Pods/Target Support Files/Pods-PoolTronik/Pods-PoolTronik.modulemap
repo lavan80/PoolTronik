@@ -1,0 +1,6 @@
+framework module Pods_PoolTronik {
+  umbrella header "Pods-PoolTronik-umbrella.h"
+
+  export *
+  module * { export * }
+}

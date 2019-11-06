@@ -1,0 +1,6 @@
+framework module Pods_PoolTronikUITests {
+  umbrella header "Pods-PoolTronikUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
