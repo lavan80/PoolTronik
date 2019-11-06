@@ -39,6 +39,7 @@ class RelayDetailsViewController: UIViewController {
             setView(relay: relay)
         }
         nameTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
+        self.navigationController?.navigationBar.topItem?.title = " "
     }
     
     fileprivate func setView(relay :Relay)

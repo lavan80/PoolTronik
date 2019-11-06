@@ -160,8 +160,8 @@
                                             <constraint firstAttribute="height" constant="46" id="hZI-kQ-ZPZ"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDD-6L-xN7">
-                                        <rect key="frame" x="66" y="30" width="301" height="0.0"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDD-6L-xN7">
+                                        <rect key="frame" x="90" y="30" width="253" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -173,8 +173,8 @@
                                     <constraint firstItem="hDD-6L-xN7" firstAttribute="centerY" secondItem="48l-be-DSx" secondAttribute="centerY" id="fYh-sh-z1N"/>
                                     <constraint firstAttribute="height" constant="60" id="nEk-Uw-8kY"/>
                                     <constraint firstItem="fr1-4T-owt" firstAttribute="leading" secondItem="48l-be-DSx" secondAttribute="leading" constant="12" id="oCM-OD-kml"/>
-                                    <constraint firstItem="hDD-6L-xN7" firstAttribute="leading" secondItem="fr1-4T-owt" secondAttribute="trailing" constant="8" id="oew-g6-R7A"/>
-                                    <constraint firstAttribute="trailing" secondItem="hDD-6L-xN7" secondAttribute="trailing" constant="8" id="wmX-jB-0i7"/>
+                                    <constraint firstItem="hDD-6L-xN7" firstAttribute="leading" secondItem="fr1-4T-owt" secondAttribute="trailing" constant="32" id="oew-g6-R7A"/>
+                                    <constraint firstAttribute="trailing" secondItem="hDD-6L-xN7" secondAttribute="trailing" constant="32" id="wmX-jB-0i7"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap in order to change the relay status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwa-YC-Dnb">
@@ -316,6 +316,9 @@
                                     <action selector="updatePressed:" destination="qmi-87-ECD" eventType="touchUpInside" id="ZZs-yE-TYA"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Tee-cq-udY">
+                                <rect key="frame" x="169" y="405.5" width="37" height="37"/>
+                            </activityIndicatorView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dLT-gT-keH">
                                 <rect key="frame" x="12" y="363" width="286" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -344,6 +347,7 @@
                             <constraint firstItem="b4X-wC-Bod" firstAttribute="leading" secondItem="why-sT-JRN" secondAttribute="leading" constant="12" id="Lnh-ox-aWr"/>
                             <constraint firstItem="KwY-8c-1Lm" firstAttribute="centerY" secondItem="b4X-wC-Bod" secondAttribute="centerY" id="NbE-C2-cQB"/>
                             <constraint firstItem="I8U-Qa-C8i" firstAttribute="top" secondItem="why-sT-JRN" secondAttribute="top" constant="12" id="Rud-kt-d02"/>
+                            <constraint firstItem="Tee-cq-udY" firstAttribute="centerX" secondItem="Tav-it-gQs" secondAttribute="centerX" id="Uf4-kc-6RF"/>
                             <constraint firstItem="I8U-Qa-C8i" firstAttribute="leading" secondItem="why-sT-JRN" secondAttribute="leading" constant="12" id="VQH-Ah-tgl"/>
                             <constraint firstItem="ZWJ-i4-PcJ" firstAttribute="top" secondItem="I8U-Qa-C8i" secondAttribute="bottom" constant="12" id="Vnz-Pl-Rt5"/>
                             <constraint firstItem="b4X-wC-Bod" firstAttribute="top" secondItem="9KF-zW-xYb" secondAttribute="bottom" constant="12" id="ZVs-yh-CNY"/>
@@ -353,6 +357,7 @@
                             <constraint firstItem="ZWJ-i4-PcJ" firstAttribute="centerX" secondItem="why-sT-JRN" secondAttribute="centerX" id="fQe-30-ZHu"/>
                             <constraint firstItem="dLT-gT-keH" firstAttribute="leading" secondItem="why-sT-JRN" secondAttribute="leading" constant="12" id="jdn-tx-itp"/>
                             <constraint firstItem="9KF-zW-xYb" firstAttribute="leading" secondItem="why-sT-JRN" secondAttribute="leading" constant="12" id="nzr-eC-5Iw"/>
+                            <constraint firstItem="Tee-cq-udY" firstAttribute="centerY" secondItem="Tav-it-gQs" secondAttribute="centerY" id="oiz-LL-uVn"/>
                             <constraint firstItem="vuW-WB-LkM" firstAttribute="top" secondItem="m3o-il-HzM" secondAttribute="bottom" constant="12" id="qLh-RW-TXY"/>
                             <constraint firstItem="Tav-it-gQs" firstAttribute="centerX" secondItem="why-sT-JRN" secondAttribute="centerX" id="z2L-lQ-x2M"/>
                         </constraints>
@@ -370,6 +375,8 @@
                     <connections>
                         <outlet property="ipTextField" destination="b4X-wC-Bod" id="8Zi-xD-HrL"/>
                         <outlet property="serverIpTextField" destination="dLT-gT-keH" id="yIe-59-M1D"/>
+                        <outlet property="updateTokenButton" destination="Tav-it-gQs" id="Xzb-Kc-TE4"/>
+                        <outlet property="updateTokenIndicator" destination="Tee-cq-udY" id="qKJ-0B-cqQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I9C-5U-zBB" userLabel="First Responder" sceneMemberID="firstResponder"/>

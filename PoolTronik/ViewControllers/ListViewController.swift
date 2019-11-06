@@ -21,11 +21,19 @@ class ListViewController: UIViewController {
         super.viewDidLoad()
         self.setTableView()
         NotificationCenter.default.addObserver(self, selector: #selector(self.methodOfReceivedNotification(notification:)), name: Notification.Name("TokenUpdateSent"), object: nil)
+        //show token update needed on first launch
+        if  UserDefaults.standard.value(forKey: "keyNotificationToken") == nil {
+            self.showHeader = true
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.loadData()
+        self.title = "PoolTronik"
     }
     
     private func setTableView() {

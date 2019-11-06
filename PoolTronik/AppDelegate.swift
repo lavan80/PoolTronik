@@ -39,11 +39,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
                 print("Error fetching remote instance ID: \(error)")
             } else if let result = result {
                 print("Remote instance ID token: \(result.token)")
-                UserDefaults.standard.set(result.token, forKey: "keyNotificationToken")
-                UserDefaults.standard.synchronize()
-                NetworkManager.shared.updateToken(token: result.token) { (succsess) in
-                    let userInfo = ["succsess": succsess]
-                    NotificationCenter.default.post(name: Notification.Name("TokenUpdateSent"), object: nil, userInfo: userInfo)
+                
+                if result.token != UserDefaults.standard.value(forKey: "keyNotificationToken") as? String {
+                    NetworkManager.shared.updateToken(token: result.token) { (succsess) in
+                        let userInfo = ["succsess": succsess]
+                        NotificationCenter.default.post(name: Notification.Name("TokenUpdateSent"), object: nil, userInfo: userInfo)
+                        if succsess == true {
+                            UserDefaults.standard.set(result.token, forKey: "keyNotificationToken")
+                            UserDefaults.standard.synchronize()
+                        }
+                    }
                 }
             }
         }

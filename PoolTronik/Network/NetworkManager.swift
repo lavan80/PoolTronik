@@ -12,8 +12,9 @@ class NetworkManager {
     
     private var dataTask: URLSessionDataTask?
     private var baseIp: String = "192.168.1.199"
+    private var baseServerIp: String = ""
     let keyIP : String = "keyIP"
-    let keyServerIP : String = "keyIP"
+    let keyServerIP : String = "keyServerIp"
     
     public static let shared : NetworkManager = NetworkManager()
     
@@ -128,6 +129,6 @@ class NetworkManager {
         {
             return ip as! String
         }
-        return baseIp
+        return baseServerIp
     }
 }
