@@ -12,6 +12,7 @@ import UIKit
 protocol RelayTableViewCellDelegte : NSObjectProtocol {
     func detailsPressed(relayId: String)
     func actionButtonPressed(relayId: String)
+    func scheduleButtonPressed(relayId: String)
 }
 
 class RelayTableViewCell: UITableViewCell {
@@ -19,6 +20,7 @@ class RelayTableViewCell: UITableViewCell {
     @IBOutlet weak var actionButton: UIButton!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var detailsButton: UIButton!
+    @IBOutlet weak var scheduleButton: UIButton!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     private var onId: String?
@@ -61,5 +63,9 @@ class RelayTableViewCell: UITableViewCell {
     @IBAction func detailsButtonPressed(_ sender: Any) {
         let statusId = status! ? offId : onId
         self.relayTableViewCellDelegte?.detailsPressed(relayId: statusId!)
+    }
+    @IBAction func schedualeButtonPressed(_ sender: Any) {
+        let statusId = status! ? offId : onId
+        self.relayTableViewCellDelegte?.scheduleButtonPressed(relayId: statusId!)
     }
 }

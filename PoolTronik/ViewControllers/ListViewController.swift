@@ -87,7 +87,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 100
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -106,17 +106,17 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension ListViewController: RelayTableViewCellDelegte {
     func actionButtonPressed(relayId: String) {
-        NetworkManager.shared.setStatus(key: relayId) { (succsess, key) in
+        NetworkManager.shared.setStatus(key: relayId) {[weak self] (succsess, key) in
             if succsess {
                 LocalDataBase.shared.changeStatus(key: key, completion: {(suc) in
                     DispatchQueue.main.async {
-                        self.loadData()
+                        self?.loadData()
                     }
                 })
             }
             else {
                 DispatchQueue.main.async {
-                    self.loadData()
+                    self?.loadData()
                 }
             }
         }
@@ -128,6 +128,14 @@ extension ListViewController: RelayTableViewCellDelegte {
         let relayDetailsViewController = storyBoard.instantiateViewController(withIdentifier: "relayDetailsViewController") as! RelayDetailsViewController
         relayDetailsViewController.relay = relay
         self.navigationController?.pushViewController(relayDetailsViewController, animated: true)
+    }
+    
+    func scheduleButtonPressed(relayId: String) {
+        let relay = LocalDataBase.shared.getRelay(relayId: relayId)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let scheduleViewController = storyBoard.instantiateViewController(withIdentifier: "ScheduleViewController") as! ScheduleViewController
+        scheduleViewController.relay = relay
+        self.navigationController?.pushViewController(scheduleViewController, animated: true)
     }
 }
 
