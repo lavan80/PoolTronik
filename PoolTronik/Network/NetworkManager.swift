@@ -19,9 +19,6 @@ class NetworkManager {
     public static let shared : NetworkManager = NetworkManager()
     
     func setStatus(key: String, completion: @escaping (_ succsess : Bool, _ relayId: String) -> Void) {
-//        Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
-//            completion(true, key)
-//        }
         dataTask?.cancel()
         if let urlComponents = URLComponents(string: "http://\(self.getIp())/\(key)") {
            
@@ -59,6 +56,81 @@ class NetworkManager {
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             request.addValue("application/json", forHTTPHeaderField: "Accept")
             URLSession.shared.dataTask(with: request) { (data, response, error) in
+                guard let _ = data, let _ = response as? HTTPURLResponse, error == nil else {
+                    completion(false)
+                    return
+                }
+                if let httpResponse = response as? HTTPURLResponse
+                {
+                    if httpResponse.statusCode == 200
+                    {
+                        completion(true)
+                    }
+                }
+                }.resume()
+        }
+    }
+    
+    func schedule(pTScheduleDate: PTScheduleDate, completion: @escaping (_ succsess : Bool) -> Void) {
+        dataTask?.cancel()
+        if let urlComponents = URLComponents(string: "http://\(self.getServerIp()):8080/schedule") {
+           
+            guard let url = urlComponents.url else { return }
+
+            do {
+                let dict = try pTScheduleDate.asDictionary()
+                 var request = URLRequest(url: url)
+                           request.httpMethod = "POST"
+                            let jsonData = try JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted)
+                           request.httpBody = jsonData
+                           request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+                           request.addValue("application/json", forHTTPHeaderField: "Accept")
+                           URLSession.shared.dataTask(with: request) { (data, response, error) in
+                               guard let _ = data, let _ = response as? HTTPURLResponse, error == nil else {
+                                   completion(false)
+                                   return
+                               }
+                               if let httpResponse = response as? HTTPURLResponse
+                               {
+                                   if httpResponse.statusCode == 200
+                                   {
+                                       completion(true)
+                                   }
+                               }
+                               }.resume()
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
+    func getScheduale(completion: @escaping (_ succsess : Bool, _ tasks: [PTScheduleDate]) -> Void) {
+        dataTask?.cancel()
+        if let urlComponents = URLComponents(string: "http://\(self.getServerIp()):8080/tasks") {
+           
+            guard let url = urlComponents.url else { return }
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                guard let _ = data, let _ = response as? HTTPURLResponse, error == nil else {
+                    completion(false, [])
+                    return
+                }
+                if let httpResponse = response as? HTTPURLResponse
+                {
+                    if httpResponse.statusCode == 200
+                    {
+                        completion(true, [])
+                    }
+                }
+                }.resume()
+        }
+    }
+    
+    func deleteSchedule(relayId: String, completion: @escaping (_ succsess : Bool) -> Void) {
+        dataTask?.cancel()
+        if let urlComponents = URLComponents(string: "http://\(self.getServerIp()):8080/tasks/delete?id=\(relayId)") {
+           
+            guard let url = urlComponents.url else { return }
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
                 guard let _ = data, let _ = response as? HTTPURLResponse, error == nil else {
                     completion(false)
                     return
@@ -131,4 +203,14 @@ class NetworkManager {
         }
         return baseServerIp
     }
+}
+
+extension Encodable {
+  func asDictionary() throws -> [String: Any] {
+    let data = try JSONEncoder().encode(self)
+    guard let dictionary = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] else {
+      throw NSError()
+    }
+    return dictionary
+  }
 }

@@ -10,7 +10,6 @@
 		49BE233FE2B96250D7E03287 /* Pods_PoolTronikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4E461C3660B16B6AED58CC /* Pods_PoolTronikTests.framework */; };
 		B493319F2CAC8FC21D07FC3F /* Pods_PoolTronik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069CF269E3140B06E1E2690E /* Pods_PoolTronik.framework */; };
 		C991B767EFBD67989F45956C /* Pods_PoolTronikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E152CDE7C1986B5FD5564F50 /* Pods_PoolTronikUITests.framework */; };
-		D75435ED23FEBD280010FC70 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D75435EC23FEBD280010FC70 /* GoogleService-Info.plist */; };
 		F408F4B5222FE056007E8282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F4B4222FE056007E8282 /* AppDelegate.swift */; };
 		F408F4B7222FE056007E8282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F4B6222FE056007E8282 /* ViewController.swift */; };
 		F408F4BA222FE056007E8282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F408F4B8222FE056007E8282 /* Main.storyboard */; };
@@ -18,6 +17,11 @@
 		F408F4BF222FE057007E8282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F408F4BD222FE057007E8282 /* LaunchScreen.storyboard */; };
 		F408F4CA222FE057007E8282 /* PoolTronikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F4C9222FE057007E8282 /* PoolTronikTests.swift */; };
 		F408F4D5222FE057007E8282 /* PoolTronikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F4D4222FE057007E8282 /* PoolTronikUITests.swift */; };
+		F4267B62243E12D60029821F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4267B61243E12D60029821F /* GoogleService-Info.plist */; };
+		F4267B64243E22ED0029821F /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4267B63243E22ED0029821F /* ScheduleViewController.swift */; };
+		F4267B68243E3F9F0029821F /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4267B67243E3F9F0029821F /* DayCollectionViewCell.swift */; };
+		F4267B6A2440CF880029821F /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4267B692440CF880029821F /* ScheduleTableViewCell.swift */; };
+		F4267B6C2440D3E30029821F /* PTScheduleDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4267B6B2440D3E30029821F /* PTScheduleDate.swift */; };
 		F44267482369773500B333F2 /* LeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44267472369773500B333F2 /* LeakViewController.swift */; };
 		F44A50252237B82600E1AFB4 /* String+IP.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44A50242237B82600E1AFB4 /* String+IP.swift */; };
 		F450DCD522367C17004794D0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F450DCD422367C17004794D0 /* NetworkManager.swift */; };
@@ -58,7 +62,6 @@
 		BA4E461C3660B16B6AED58CC /* Pods_PoolTronikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolTronikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C510C0060CD605C8B1E1B592 /* Pods-PoolTronikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronikUITests.release.xcconfig"; path = "Target Support Files/Pods-PoolTronikUITests/Pods-PoolTronikUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D26767C4B4FC7DA5ADA26595 /* Pods-PoolTronik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronik.release.xcconfig"; path = "Target Support Files/Pods-PoolTronik/Pods-PoolTronik.release.xcconfig"; sourceTree = "<group>"; };
-		D75435EC23FEBD280010FC70 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E152CDE7C1986B5FD5564F50 /* Pods_PoolTronikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolTronikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE12FF91208790B97B49A0C5 /* Pods-PoolTronikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronikUITests.debug.xcconfig"; path = "Target Support Files/Pods-PoolTronikUITests/Pods-PoolTronikUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF2D25EC0A0F7D84981670DF /* Pods-PoolTronikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronikTests.debug.xcconfig"; path = "Target Support Files/Pods-PoolTronikTests/Pods-PoolTronikTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +78,11 @@
 		F408F4D0222FE057007E8282 /* PoolTronikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoolTronikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F408F4D4222FE057007E8282 /* PoolTronikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolTronikUITests.swift; sourceTree = "<group>"; };
 		F408F4D6222FE057007E8282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4267B61243E12D60029821F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4267B63243E22ED0029821F /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		F4267B67243E3F9F0029821F /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
+		F4267B692440CF880029821F /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		F4267B6B2440D3E30029821F /* PTScheduleDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTScheduleDate.swift; sourceTree = "<group>"; };
 		F4426746236971EB00B333F2 /* PoolTronik.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PoolTronik.entitlements; sourceTree = "<group>"; };
 		F44267472369773500B333F2 /* LeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeakViewController.swift; sourceTree = "<group>"; };
 		F44A50242237B82600E1AFB4 /* String+IP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+IP.swift"; sourceTree = "<group>"; };
@@ -180,7 +188,7 @@
 				F408F4B8222FE056007E8282 /* Main.storyboard */,
 				F408F4BB222FE057007E8282 /* Assets.xcassets */,
 				F408F4BD222FE057007E8282 /* LaunchScreen.storyboard */,
-				D75435EC23FEBD280010FC70 /* GoogleService-Info.plist */,
+				F4267B61243E12D60029821F /* GoogleService-Info.plist */,
 				F408F4C0222FE057007E8282 /* Info.plist */,
 			);
 			path = PoolTronik;
@@ -221,6 +229,7 @@
 				F4CCE8C2222FED9500E662D0 /* AboutViewController.swift */,
 				F4CCE8C92230031600E662D0 /* RelayDetailsViewController.swift */,
 				F44267472369773500B333F2 /* LeakViewController.swift */,
+				F4267B63243E22ED0029821F /* ScheduleViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -231,6 +240,8 @@
 				F4CCE8C72230001500E662D0 /* RelayTableViewCell.swift */,
 				F4E3AADC236823ED00EB972C /* UpdateTokenHeader.swift */,
 				F4E3AADE2368240100EB972C /* UpdateTokenHeader.xib */,
+				F4267B67243E3F9F0029821F /* DayCollectionViewCell.swift */,
+				F4267B692440CF880029821F /* ScheduleTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +252,7 @@
 				F4CCE8CC2230080600E662D0 /* Relay.swift */,
 				F4CCE8CE22300A2300E662D0 /* LocalDataBase.swift */,
 				F44A50242237B82600E1AFB4 /* String+IP.swift */,
+				F4267B6B2440D3E30029821F /* PTScheduleDate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -355,9 +367,9 @@
 			files = (
 				F408F4BF222FE057007E8282 /* LaunchScreen.storyboard in Resources */,
 				F408F4BC222FE057007E8282 /* Assets.xcassets in Resources */,
-				D75435ED23FEBD280010FC70 /* GoogleService-Info.plist in Resources */,
 				F408F4BA222FE056007E8282 /* Main.storyboard in Resources */,
 				F4E3AADF2368240100EB972C /* UpdateTokenHeader.xib in Resources */,
+				F4267B62243E12D60029821F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4267B64243E22ED0029821F /* ScheduleViewController.swift in Sources */,
 				F4E3AADD236823ED00EB972C /* UpdateTokenHeader.swift in Sources */,
 				F4CCE8CF22300A2300E662D0 /* LocalDataBase.swift in Sources */,
 				F44A50252237B82600E1AFB4 /* String+IP.swift in Sources */,
@@ -478,7 +491,10 @@
 				F4CCE8C5222FF62C00E662D0 /* ListViewController.swift in Sources */,
 				F4CCE8CD2230080600E662D0 /* Relay.swift in Sources */,
 				F44267482369773500B333F2 /* LeakViewController.swift in Sources */,
+				F4267B6A2440CF880029821F /* ScheduleTableViewCell.swift in Sources */,
+				F4267B68243E3F9F0029821F /* DayCollectionViewCell.swift in Sources */,
 				F4CCE8C82230001500E662D0 /* RelayTableViewCell.swift in Sources */,
+				F4267B6C2440D3E30029821F /* PTScheduleDate.swift in Sources */,
 				F408F4B5222FE056007E8282 /* AppDelegate.swift in Sources */,
 				F4CCE8C3222FED9500E662D0 /* AboutViewController.swift in Sources */,
 				F4CCE8C0222FE69500E662D0 /* SettingsViewController.swift in Sources */,
