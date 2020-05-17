@@ -253,7 +253,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cZD-WI-h2w">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cZD-WI-h2w">
                                 <rect key="frame" x="0.0" y="304" width="375" height="363"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -265,7 +265,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQB-W2-rtH">
-                                                    <rect key="frame" x="62" y="11" width="248" height="21.5"/>
+                                                    <rect key="frame" x="82" y="11" width="228" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -303,10 +303,11 @@
                                                 <constraint firstItem="lmu-gl-Jww" firstAttribute="centerY" secondItem="hHd-2f-2VE" secondAttribute="centerY" id="UDA-iF-WVj"/>
                                                 <constraint firstItem="YQB-W2-rtH" firstAttribute="firstBaseline" secondItem="lmu-gl-Jww" secondAttribute="baseline" id="XWw-YZ-ewB"/>
                                                 <constraint firstItem="YQB-W2-rtH" firstAttribute="centerY" secondItem="hHd-2f-2VE" secondAttribute="centerY" id="eHI-lF-lLp"/>
-                                                <constraint firstItem="YQB-W2-rtH" firstAttribute="leading" secondItem="PY2-De-pi5" secondAttribute="trailing" constant="10" id="wYB-a2-9Kd"/>
+                                                <constraint firstItem="YQB-W2-rtH" firstAttribute="leading" secondItem="PY2-De-pi5" secondAttribute="trailing" constant="30" id="wYB-a2-9Kd"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="deleteButton" destination="lmu-gl-Jww" id="K57-Nt-zmw"/>
                                             <outlet property="nameLabel" destination="PY2-De-pi5" id="BuL-ap-OiU"/>
                                             <outlet property="scheduleLabel" destination="YQB-W2-rtH" id="1YH-iw-G4n"/>
                                         </connections>

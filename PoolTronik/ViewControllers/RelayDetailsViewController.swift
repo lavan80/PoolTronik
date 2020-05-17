@@ -23,7 +23,7 @@ class RelayDetailsViewController: UIViewController {
     let greenColor : UIColor = UIColor(red: 25.0/255.0, green: 168.0/255.0, blue: 27.0/255.0, alpha: 1.0)
     let redColor : UIColor = UIColor(red: 224.0/255.0, green: 13.0/255.0, blue: 13.0/255.0, alpha: 1.0)
     var relay: Relay?
-    var schedualedTasks : [String] = ["asdsd"]
+    var schedualedTasks : [PTScheduleDate] = []
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         self.relay = sender as? Relay
@@ -31,31 +31,39 @@ class RelayDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.getSchedule()
+        
         self.spinner.isHidden = true
         headerStatusView.layer.cornerRadius = 0.5 * headerStatusView.bounds.size.width
         headerStatusView.clipsToBounds = true
         relayStatusView.layer.cornerRadius = 0.5 * relayStatusView.bounds.size.width
         relayStatusView.clipsToBounds = true
+        let relayArray = LocalDataBase.shared.getRelayArray()
         if let relay = self.relay
         {
             setView(relay: relay)
+            if let index = relayArray.index(where: { $0.onId == self.relay?.onId }) {
+                self.getSchedule(relay: index)
+            }
         }
         nameTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         self.navigationController?.navigationBar.topItem?.title = " "
         tableView.tableFooterView = UIView()
-        self.getSchedule()
     }
     
-    private func getSchedule() {
-        NetworkManager.shared.getScheduale {[weak self] (succsess, pTScheduales) in
+    private func getSchedule(relay: Int) {
+        NetworkManager.shared.getScheduale(relay: relay) {[weak self] (succsess, pTScheduales) in
             if succsess {
-                self?.tableView.reloadData()
+                self?.schedualedTasks = pTScheduales
+                DispatchQueue.main.async {
+                    self?.tableView.reloadData()
+                }
             }
             else {
                 let alert = UIAlertController(title: "Failed to get schedule", message: "", preferredStyle: UIAlertController.Style.alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                self?.present(alert, animated: true, completion: nil)
+                DispatchQueue.main.async {
+                    self?.present(alert, animated: true, completion: nil)
+                }
             }
         }
     }
@@ -105,6 +113,7 @@ class RelayDetailsViewController: UIViewController {
             self.navigationController?.popViewController(animated: true)
         }
     }
+    
     @IBAction func scheduleButtonPressed(_ sender: Any) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let scheduleViewController = storyBoard.instantiateViewController(withIdentifier: "ScheduleViewController") as! ScheduleViewController
@@ -119,10 +128,21 @@ extension RelayDetailsViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let ptSchedule = self.schedualedTasks[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleTableViewCell", for: indexPath) as! ScheduleTableViewCell
-        cell.nameLabel.text = "name"
-        cell.scheduleLabel.text = "schedule"
+        cell.nameLabel.text = relay?.name
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS"
+        let date = dateFormatter.date(from:ptSchedule.startDate!)!
+        dateFormatter.dateFormat = "EE HH:mm"
+        let weekDay = dateFormatter.string(from: date)
+        let once = ptSchedule.duration == 0 ? "    Constantly" : "    Once"
+        let off = ptSchedule.status == 0 ? " (on)" : " (off)"
+        cell.scheduleLabel.text = weekDay + once + off
         cell.scheduleTableViewCellDelegte = self
+        cell.relayId = ptSchedule.id
         return cell
     }
     
@@ -132,15 +152,26 @@ extension RelayDetailsViewController: UITableViewDelegate, UITableViewDataSource
 }
 
 extension RelayDetailsViewController : ScheduleTableViewCellDelegte {
-    func deletePressed() {
-        NetworkManager.shared.deleteSchedule(relayId: "") {[weak self] (succsess) in
+    func deletePressed(relayId : Int) {
+        NetworkManager.shared.deleteSchedule(relayId: relayId) {[weak self] (succsess) in
             if succsess {
-                
+                self?.schedualedTasks = (self?.schedualedTasks.filter {$0.id != relayId})!
+                DispatchQueue.main.async {
+                    self?.tableView.reloadData()
+                }
             }
             else {
+                if let index = self?.schedualedTasks.index(where: { $0.id == relayId }) {
+                    let cell = self?.tableView.cellForRow(at: IndexPath(row: index, section: 0)) as? ScheduleTableViewCell
+                    DispatchQueue.main.async {
+                        cell?.deleteButton.isEnabled = true
+                    }
+                }
                 let alert = UIAlertController(title: "Failed to delete schedule", message: "", preferredStyle: UIAlertController.Style.alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-                self?.present(alert, animated: true, completion: nil)
+                DispatchQueue.main.async {
+                     self?.present(alert, animated: true, completion: nil)
+                }
             }
         }
     }

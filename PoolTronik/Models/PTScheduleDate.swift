@@ -8,15 +8,15 @@
 
 import Foundation
 
-class PTScheduleDate: NSObject, Encodable {
+class PTScheduleDate: NSObject, Codable {
     var id : Int?
     var relay : Int?
     var status : Int?
     var startDate : String?
-    var nextDates : [String] = []
+    var nextDates : [String]? = []
     var duration : Int = 0
     var iteration : Int?
-    var repeatList : [Int] = []
+    var repeatList : [Int]? = []
     
     init(id: Int, relay: Int, status: Int, startDate: String, nextDates: [String], duration: Int, iteration: Int, repeatList: [Int]) {
         self.id = id

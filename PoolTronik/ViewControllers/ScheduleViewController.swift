@@ -66,7 +66,7 @@ class ScheduleViewController: UIViewController {
     
     private func enableButtons() {
         self.saveButton.isEnabled = true
-        self.saveButton.isEnabled = true
+        self.cancelButton.isEnabled = true
     }
     
     private func setNextDates(startDate: Date) {
@@ -101,7 +101,9 @@ class ScheduleViewController: UIViewController {
             self.disableButtons()
             NetworkManager.shared.schedule(pTScheduleDate: pTScheduleDate) { [weak self] (succsess) in
                 if succsess {
-                   self?.navigationController?.popViewController(animated: true)
+                    DispatchQueue.main.async {
+                        self?.navigationController?.popViewController(animated: true)
+                    }
                 }
                 else {
                     let alert = UIAlertController(title: "Failed to set", message: "", preferredStyle: UIAlertController.Style.alert)

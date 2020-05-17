@@ -104,9 +104,9 @@ class NetworkManager {
         }
     }
     
-    func getScheduale(completion: @escaping (_ succsess : Bool, _ tasks: [PTScheduleDate]) -> Void) {
+    func getScheduale(relay: Int, completion: @escaping (_ succsess : Bool, _ tasks: [PTScheduleDate]) -> Void) {
         dataTask?.cancel()
-        if let urlComponents = URLComponents(string: "http://\(self.getServerIp()):8080/tasks") {
+        if let urlComponents = URLComponents(string: "http://\(self.getServerIp()):8080/tasks?relay=\(relay)") {
            
             guard let url = urlComponents.url else { return }
             URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -118,14 +118,23 @@ class NetworkManager {
                 {
                     if httpResponse.statusCode == 200
                     {
-                        completion(true, [])
+                        do {
+                            
+                            let decoder = JSONDecoder()
+                            let scheduale = try decoder.decode([PTScheduleDate].self, from: data!)
+                            completion(true, scheduale)
+                        } catch {
+                            print("error:\(error)")
+                            completion(false, [])
+                        }
+                        
                     }
                 }
                 }.resume()
         }
     }
     
-    func deleteSchedule(relayId: String, completion: @escaping (_ succsess : Bool) -> Void) {
+    func deleteSchedule(relayId: Int, completion: @escaping (_ succsess : Bool) -> Void) {
         dataTask?.cancel()
         if let urlComponents = URLComponents(string: "http://\(self.getServerIp()):8080/tasks/delete?id=\(relayId)") {
            
