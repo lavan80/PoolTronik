@@ -122,7 +122,7 @@ class ScheduleViewController: UIViewController {
     }
     
     @IBAction func switchPressed(_ sender: Any) {
-        self.pTScheduleDate?.status = self.relaySwitch.isOn ? 1 : 0
+        self.pTScheduleDate?.status = self.relaySwitch.isOn ? 0 : 1
     }
 }
 
