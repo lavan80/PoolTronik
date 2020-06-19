@@ -13,7 +13,7 @@ class ListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    fileprivate let numberOfRelays : Int = 8
+    fileprivate let numberOfRelays : Int = 4
     fileprivate var relayArray : [Relay]?
     private var showHeader : Bool = false
     

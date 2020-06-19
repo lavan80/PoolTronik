@@ -40,7 +40,7 @@ class LocalDataBase {
             let relay4 : Relay = Relay(name: "Relay4", status: false, onId: "FF0401", offId: "FF0400")
             relayArray.append(relay4)
             //defaults.set(relay4, forKey: keyRelay4)
-            let relay5 : Relay = Relay(name: "Relay5", status: false, onId: "FF0501", offId: "FF0500")
+            /*let relay5 : Relay = Relay(name: "Relay5", status: false, onId: "FF0501", offId: "FF0500")
             relayArray.append(relay5)
             //defaults.set(relay5, forKey: keyRelay5)
             let relay6 : Relay = Relay(name: "Relay6", status: false, onId: "FF0601", offId: "FF0600")
@@ -52,6 +52,7 @@ class LocalDataBase {
             let relay8 : Relay = Relay(name: "Relay8", status: false, onId: "FF0801", offId: "FF0800")
             relayArray.append(relay8)
             //defaults.set(relay8, forKey: keyRelay8)
+            */
             do {
                 let encodedData: Data = try NSKeyedArchiver.archivedData(withRootObject: relayArray, requiringSecureCoding: false)
                 defaults.set(encodedData, forKey: keyRelayArray)
