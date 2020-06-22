@@ -131,6 +131,7 @@ extension RelayDetailsViewController: UITableViewDelegate, UITableViewDataSource
         let ptSchedule = self.schedualedTasks[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ScheduleTableViewCell", for: indexPath) as! ScheduleTableViewCell
         cell.nameLabel.text = relay?.name
+        cell.deleteButton.isEnabled = true
         
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
