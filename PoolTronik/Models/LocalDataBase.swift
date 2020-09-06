@@ -70,6 +70,7 @@ class LocalDataBase {
         let defaults = UserDefaults.standard
         let decoded  = defaults.object(forKey: LocalDataBase.shared.keyRelayArray) as! Data
         do {
+            
             guard let relayArray = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(decoded) as? [Relay] else {
                 fatalError("error")
             }

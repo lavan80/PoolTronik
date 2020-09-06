@@ -15,7 +15,7 @@ class AboutViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {
-        let url = URL(string: "http://www.jenyazla.wixsite.com/pool-tronic")
+        let url = URL(string: "http://www.pooltronic.co.il")
         webView.load(URLRequest(url: url!))
     }
     

@@ -33,7 +33,7 @@ class ListViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.loadData()
-        self.title = "PoolTronik"
+        self.title = "PoolTronic"
     }
     
     private func setTableView() {

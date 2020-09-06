@@ -10,7 +10,7 @@
 		49BE233FE2B96250D7E03287 /* Pods_PoolTronikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4E461C3660B16B6AED58CC /* Pods_PoolTronikTests.framework */; };
 		B493319F2CAC8FC21D07FC3F /* Pods_PoolTronik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069CF269E3140B06E1E2690E /* Pods_PoolTronik.framework */; };
 		C991B767EFBD67989F45956C /* Pods_PoolTronikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E152CDE7C1986B5FD5564F50 /* Pods_PoolTronikUITests.framework */; };
-		D7FB4F2324C9B98600EDCB57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7FB4F2224C9B98600EDCB57 /* GoogleService-Info.plist */; };
+		D723B81B2504F68000D3FA5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D723B81A2504F68000D3FA5F /* GoogleService-Info.plist */; };
 		F408F4B5222FE056007E8282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F4B4222FE056007E8282 /* AppDelegate.swift */; };
 		F408F4B7222FE056007E8282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F4B6222FE056007E8282 /* ViewController.swift */; };
 		F408F4BA222FE056007E8282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F408F4B8222FE056007E8282 /* Main.storyboard */; };
@@ -62,7 +62,7 @@
 		BA4E461C3660B16B6AED58CC /* Pods_PoolTronikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolTronikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C510C0060CD605C8B1E1B592 /* Pods-PoolTronikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronikUITests.release.xcconfig"; path = "Target Support Files/Pods-PoolTronikUITests/Pods-PoolTronikUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D26767C4B4FC7DA5ADA26595 /* Pods-PoolTronik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronik.release.xcconfig"; path = "Target Support Files/Pods-PoolTronik/Pods-PoolTronik.release.xcconfig"; sourceTree = "<group>"; };
-		D7FB4F2224C9B98600EDCB57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D723B81A2504F68000D3FA5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E152CDE7C1986B5FD5564F50 /* Pods_PoolTronikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolTronikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE12FF91208790B97B49A0C5 /* Pods-PoolTronikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronikUITests.debug.xcconfig"; path = "Target Support Files/Pods-PoolTronikUITests/Pods-PoolTronikUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF2D25EC0A0F7D84981670DF /* Pods-PoolTronikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronikTests.debug.xcconfig"; path = "Target Support Files/Pods-PoolTronikTests/Pods-PoolTronikTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -184,9 +184,9 @@
 				F4CCE8CB223007DB00E662D0 /* Models */,
 				F450DCD322367BFE004794D0 /* Network */,
 				F408F4B4222FE056007E8282 /* AppDelegate.swift */,
+				D723B81A2504F68000D3FA5F /* GoogleService-Info.plist */,
 				F408F4B6222FE056007E8282 /* ViewController.swift */,
 				F408F4B8222FE056007E8282 /* Main.storyboard */,
-				D7FB4F2224C9B98600EDCB57 /* GoogleService-Info.plist */,
 				F408F4BB222FE057007E8282 /* Assets.xcassets */,
 				F408F4BD222FE057007E8282 /* LaunchScreen.storyboard */,
 				F408F4C0222FE057007E8282 /* Info.plist */,
@@ -367,7 +367,7 @@
 			files = (
 				F408F4BF222FE057007E8282 /* LaunchScreen.storyboard in Resources */,
 				F408F4BC222FE057007E8282 /* Assets.xcassets in Resources */,
-				D7FB4F2324C9B98600EDCB57 /* GoogleService-Info.plist in Resources */,
+				D723B81B2504F68000D3FA5F /* GoogleService-Info.plist in Resources */,
 				F408F4BA222FE056007E8282 /* Main.storyboard in Resources */,
 				F4E3AADF2368240100EB972C /* UpdateTokenHeader.xib in Resources */,
 			);
