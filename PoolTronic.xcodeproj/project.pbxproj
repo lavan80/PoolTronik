@@ -66,17 +66,17 @@
 		E152CDE7C1986B5FD5564F50 /* Pods_PoolTronikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PoolTronikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE12FF91208790B97B49A0C5 /* Pods-PoolTronikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronikUITests.debug.xcconfig"; path = "Target Support Files/Pods-PoolTronikUITests/Pods-PoolTronikUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF2D25EC0A0F7D84981670DF /* Pods-PoolTronikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoolTronikTests.debug.xcconfig"; path = "Target Support Files/Pods-PoolTronikTests/Pods-PoolTronikTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F408F4B1222FE056007E8282 /* PoolTronik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolTronik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F408F4B1222FE056007E8282 /* PoolTronic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoolTronic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F408F4B4222FE056007E8282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F408F4B6222FE056007E8282 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F408F4B9222FE056007E8282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F408F4BB222FE057007E8282 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F408F4BE222FE057007E8282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F408F4C0222FE057007E8282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F408F4C5222FE057007E8282 /* PoolTronikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoolTronikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F408F4C5222FE057007E8282 /* PoolTronicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoolTronicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F408F4C9222FE057007E8282 /* PoolTronikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolTronikTests.swift; sourceTree = "<group>"; };
 		F408F4CB222FE057007E8282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F408F4D0222FE057007E8282 /* PoolTronikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoolTronikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F408F4D0222FE057007E8282 /* PoolTronicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoolTronicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F408F4D4222FE057007E8282 /* PoolTronikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolTronikUITests.swift; sourceTree = "<group>"; };
 		F408F4D6222FE057007E8282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4267B63243E22ED0029821F /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
@@ -168,9 +168,9 @@
 		F408F4B2222FE056007E8282 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F408F4B1222FE056007E8282 /* PoolTronik.app */,
-				F408F4C5222FE057007E8282 /* PoolTronikTests.xctest */,
-				F408F4D0222FE057007E8282 /* PoolTronikUITests.xctest */,
+				F408F4B1222FE056007E8282 /* PoolTronic.app */,
+				F408F4C5222FE057007E8282 /* PoolTronicTests.xctest */,
+				F408F4D0222FE057007E8282 /* PoolTronicUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,9 +260,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F408F4B0222FE056007E8282 /* PoolTronik */ = {
+		F408F4B0222FE056007E8282 /* PoolTronic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F408F4D9222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronik" */;
+			buildConfigurationList = F408F4D9222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronic" */;
 			buildPhases = (
 				BDD390BAA3C3697BC204A7DD /* [CP] Check Pods Manifest.lock */,
 				F408F4AD222FE056007E8282 /* Sources */,
@@ -274,14 +274,14 @@
 			);
 			dependencies = (
 			);
-			name = PoolTronik;
+			name = PoolTronic;
 			productName = PoolTronik;
-			productReference = F408F4B1222FE056007E8282 /* PoolTronik.app */;
+			productReference = F408F4B1222FE056007E8282 /* PoolTronic.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F408F4C4222FE057007E8282 /* PoolTronikTests */ = {
+		F408F4C4222FE057007E8282 /* PoolTronicTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F408F4DC222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronikTests" */;
+			buildConfigurationList = F408F4DC222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronicTests" */;
 			buildPhases = (
 				7F580607D604803CB76A9C3D /* [CP] Check Pods Manifest.lock */,
 				F408F4C1222FE057007E8282 /* Sources */,
@@ -293,14 +293,14 @@
 			dependencies = (
 				F408F4C7222FE057007E8282 /* PBXTargetDependency */,
 			);
-			name = PoolTronikTests;
+			name = PoolTronicTests;
 			productName = PoolTronikTests;
-			productReference = F408F4C5222FE057007E8282 /* PoolTronikTests.xctest */;
+			productReference = F408F4C5222FE057007E8282 /* PoolTronicTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F408F4CF222FE057007E8282 /* PoolTronikUITests */ = {
+		F408F4CF222FE057007E8282 /* PoolTronicUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F408F4DF222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronikUITests" */;
+			buildConfigurationList = F408F4DF222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronicUITests" */;
 			buildPhases = (
 				07FD1B397CA1747028C223ED /* [CP] Check Pods Manifest.lock */,
 				F408F4CC222FE057007E8282 /* Sources */,
@@ -312,9 +312,9 @@
 			dependencies = (
 				F408F4D2222FE057007E8282 /* PBXTargetDependency */,
 			);
-			name = PoolTronikUITests;
+			name = PoolTronicUITests;
 			productName = PoolTronikUITests;
-			productReference = F408F4D0222FE057007E8282 /* PoolTronikUITests.xctest */;
+			productReference = F408F4D0222FE057007E8282 /* PoolTronicUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -340,7 +340,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F408F4AC222FE056007E8282 /* Build configuration list for PBXProject "PoolTronik" */;
+			buildConfigurationList = F408F4AC222FE056007E8282 /* Build configuration list for PBXProject "PoolTronic" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -353,9 +353,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F408F4B0222FE056007E8282 /* PoolTronik */,
-				F408F4C4222FE057007E8282 /* PoolTronikTests */,
-				F408F4CF222FE057007E8282 /* PoolTronikUITests */,
+				F408F4B0222FE056007E8282 /* PoolTronic */,
+				F408F4C4222FE057007E8282 /* PoolTronicTests */,
+				F408F4CF222FE057007E8282 /* PoolTronicUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -522,12 +522,12 @@
 /* Begin PBXTargetDependency section */
 		F408F4C7222FE057007E8282 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F408F4B0222FE056007E8282 /* PoolTronik */;
+			target = F408F4B0222FE056007E8282 /* PoolTronic */;
 			targetProxy = F408F4C6222FE057007E8282 /* PBXContainerItemProxy */;
 		};
 		F408F4D2222FE057007E8282 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F408F4B0222FE056007E8282 /* PoolTronik */;
+			target = F408F4B0222FE056007E8282 /* PoolTronic */;
 			targetProxy = F408F4D1222FE057007E8282 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -676,6 +676,7 @@
 				CODE_SIGN_ENTITLEMENTS = PoolTronik/PoolTronik.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = C8PK8XG2DA;
 				INFOPLIST_FILE = PoolTronik/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -698,6 +699,7 @@
 				CODE_SIGN_ENTITLEMENTS = PoolTronik/PoolTronik.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = C8PK8XG2DA;
 				INFOPLIST_FILE = PoolTronik/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -729,7 +731,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoolTronik.app/PoolTronik";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoolTronic.app/PoolTronic";
 			};
 			name = Debug;
 		};
@@ -750,7 +752,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoolTronik.app/PoolTronik";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoolTronic.app/PoolTronic";
 			};
 			name = Release;
 		};
@@ -760,6 +762,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8PK8XG2DA;
 				INFOPLIST_FILE = PoolTronikUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -780,6 +783,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C8PK8XG2DA;
 				INFOPLIST_FILE = PoolTronikUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -797,7 +801,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F408F4AC222FE056007E8282 /* Build configuration list for PBXProject "PoolTronik" */ = {
+		F408F4AC222FE056007E8282 /* Build configuration list for PBXProject "PoolTronic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F408F4D7222FE057007E8282 /* Debug */,
@@ -806,7 +810,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F408F4D9222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronik" */ = {
+		F408F4D9222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F408F4DA222FE057007E8282 /* Debug */,
@@ -815,7 +819,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F408F4DC222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronikTests" */ = {
+		F408F4DC222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronicTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F408F4DD222FE057007E8282 /* Debug */,
@@ -824,7 +828,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F408F4DF222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronikUITests" */ = {
+		F408F4DF222FE057007E8282 /* Build configuration list for PBXNativeTarget "PoolTronicUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F408F4E0222FE057007E8282 /* Debug */,
